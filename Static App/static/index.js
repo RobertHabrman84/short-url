@@ -1,12 +1,12 @@
 //from parameters query full URL
 var shorturl = window.location.pathname.substr(1);
-var baseURL = "<Replace with your API endpoint>";
+var baseURL = "https://apiurlshort.azure-api.net/urlshortfunctionapp";
 var requestURL = baseURL.concat(shorturl);
 
 var request = new XMLHttpRequest()
 request.open('GET',requestURL,false)
 //define request header
-request.setRequestHeader("Ocp-Apim-Subscription-Key","<API key>")
+request.setRequestHeader("Ocp-Apim-Subscription-Key","b799e55b9de7413dbb7b0841680e49ec")
 request.send();
 
 if(request.responseText.length > 0){
