@@ -1,6 +1,6 @@
 //from parameters query full URL
 var shorturl = window.location.pathname.substr(1);
-var baseURL = "https://apiurlshort.azure-api.net/urlshortfunctionapp/GenerateShortURL";
+var baseURL = "https://apiurlshort.azure-api.net/urlshortfunctionapp/GetFullURL";
 var requestURL = baseURL.concat(shorturl);
 
 var request = new XMLHttpRequest()
